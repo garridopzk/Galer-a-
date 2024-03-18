@@ -56,4 +56,11 @@
         android:hint="Bien venido"
         android:text="Bien venido"/>
 
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="450dp"
+        android:src="@drawable/losdelespacio"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="406dp"
+
 </RelativeLayout>
