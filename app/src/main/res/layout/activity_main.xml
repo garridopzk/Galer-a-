@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="-9dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/Rusher"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:ignore="MissingContraints">
+
+        <TextView
+            android:id="@+id/Saludo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="-260dp"
+            android:gravity="center"
+            android:text="Bienvenido"
+            android:textColor="@color/design_default_color_primary" />
+
+        <Button
+            android:id="@+id/inicio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="595dp"
+            android:text="Iniciar" />
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/usuario"
+        android:layout_width="90dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginStart="30dp"
+        android:textColor="@color/design_default_color_on_primary"
+        android:hint="Usuario:"
+        android:inputType="text"/>
+
+
+    <EditText
+        android:id="@+id/contraseña"
+        android:layout_width="100dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginStart="30dp"
+        android:textColor="@color/design_default_color_on_primary"
+        android:hint="contraseña:"
+        android:inputType="text"/>
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="85dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginStart="200dp"
+        app:srcCompat="@android:drawable/ic_menu_camera" />
+
+
+
+</RelativeLayout>
