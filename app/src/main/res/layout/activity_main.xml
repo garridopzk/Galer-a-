@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -13,7 +12,7 @@
         android:layout_marginStart="-9dp"
         android:layout_marginEnd="0dp"
         android:layout_marginBottom="0dp"
-        android:background="@drawable/Rusher"
+        android:background="@drawable/img1"
         android:gravity="center"
         android:orientation="vertical"
         tools:ignore="MissingContraints">
@@ -24,7 +23,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="0dp"
             android:layout_marginStart="7dp"
-            android:text="Iniciar" />
+            android:text="@string/inicio" />
 
     </LinearLayout>
 
@@ -35,8 +34,10 @@
         android:layout_marginTop="100dp"
         android:layout_marginStart="150dp"
         android:textColor="@color/design_default_color_on_primary"
-        android:hint="Usuario:"
-        android:inputType="text"/>
+        android:hint="@string/usuario"
+        android:background="@color/white"
+        android:inputType="text"
+        android:autofillHints="" />
 
 
     <EditText
@@ -47,14 +48,19 @@
         android:layout_marginStart="150dp"
         android:textColor="@color/design_default_color_on_primary"
         android:hint="contraseña:"
-        android:inputType="text"/>
-    <Button
+        android:background="@color/white"
+        android:inputType="text"
+        tools:ignore="HardcodedText"
+        android:autofillHints="" />
+    <TextView
+        android:id="@+id/Bienvenido"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="150dp"
+        android:layout_marginStart="50dp"
         android:layout_marginTop="12dp"
-        android:hint="Bien venido"
-        android:text="Bien venido"/>
+        android:textSize="50sp"
+        android:fontFamily="monospace"
+        android:text="@string/bienvenido"/>
 
     <ImageView
         android:layout_width="150dp"
@@ -62,5 +68,6 @@
         android:src="@drawable/losdelespacio"
         android:layout_marginStart="125dp"
         android:layout_marginTop="406dp"
+        tools:ignore="ContentDescription" />
 
 </RelativeLayout>
